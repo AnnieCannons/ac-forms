@@ -44,7 +44,7 @@
 
         <!--Introduction slide-->
         <section>
-            <h1>Class Name</h1>
+            <h1>Html Forms</h1>
             <h3></h3>
             <p>
 
@@ -53,26 +53,163 @@
         <!--/Intro Slides-->
 
         <section>
+            <h3>What are some examples of forms you see on websites?</h3>
+            <ul>
+                <li class="fragment">Comments</li>
+                <li class="fragment">Email</li>
+                <li class="fragment">Shopping</li>
+            </ul>
+            <p class="fragment">
+                <a href="https://jsfiddle.net/api/mdn/" target="_blank">Example</a>
+            </p>
+            <aside class="notes"></aside>
+        </section>
+
+        <section>
+            <h2>Form container</h2>
+            <pre><code class="hljs" data-trim contenteditable>
+<form action="/my-handling-form-page" method="post"></form>
+            </code></pre>
+            <ul>
+                <li class="fragment">The action attibute defines the location (an URL) where the form's collected data should be sent.</li>
+                <li class="fragment">The method attribute defines which HTTP method to send the data with (it can be "get" or "post").</li>
+            </ul>
+            <aside class="notes"></aside>
+        </section>
+
+
+        <section>
+            <h2></h2>
+            <pre><code class="hljs" data-trim contenteditable>
+<form action="/my-handling-form-page" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name"/>
+</form>
+            </code></pre>
+            <p>
+                <a href="https://jsfiddle.net/bhcwkkst/" target="_blank">JsFiddle</a>
+            </p>
+            <aside class="notes"></aside>
+        </section>
+
+        <section>
+            <h2>Inputs</h2>
+            <pre><code class="hljs" data-trim contenteditable>
+<input type="text" value="My name is Ays"/>
+            </code></pre>
+            <p>
+                <a href="" target="_blank"></a>
+            </p>
+            <aside class="notes"></aside>
+        </section>
+
+        <section>
+            <pre><code class="hljs" data-trim contenteditable>
+<input type="text" value="My name is Ays" placeholder="Your name"/>
+            </code></pre>
+            <p>
+                <a href="" target="_blank"></a>
+            </p>
+            <aside class="notes">
+                Delete the value of the input to see the placeholder. Delete the value attribute.
+            </aside>
+        </section>
+        <section>
+            <h2></h2>
+            <pre><code class="hljs" data-trim contenteditable>
+<input type="text" id="date" name="expiration" required/>
+<strong><abbr title="required">*</abbr></strong>
+            </code></pre>
+            <p>
+                <a href="" target="_blank"></a>
+            </p>
+            <aside class="notes"></aside>
+        </section>
+
+        <section>
+            <h2>Input types</h2>
+            <ul>
+                <li class="fragment"><a href="" target="_blank">Checkbox</a></li>
+                <li class="fragment">Button</li>
+                <li class="fragment">Range</li>
+                <li class="fragment">Week</li>
+                <li class="fragment">Tel</li>
+            </ul>
+            <p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" target="_blank">And more</a>
+            </p>
+            <aside class="notes">
+                Try out these different types on jsfiddle
+            </aside>
+        </section>
+
+        <section>
+            <h2>Fieldset</h2>
+            <pre><code class="hljs" data-trim contenteditable>
+<fieldset>
+ <legend>Fieldset label is a legend</legend>
+    <p>
+        <input type="radio" name="size" id="size_1" value="small" />
+        <label for="size_1">Small</label>
+    </p>
+    <p>
+        <input type="radio" name="size" id="size_2" value="medium" />
+        <label for="size_2">Medium</label>
+    </p>
+</fieldset>
+            </code></pre>
+            <p>
+                <a href="" target="_blank"></a>
+            </p>
+            <aside class="notes">
+                The fieldset element is a convenient way to create groups of widgets that share the same purpose.
+            </aside>
+        </section>
+
+
+        <section>
+            <h2></h2>
+            <pre><code class="hljs" data-trim contenteditable>
+<form>
+    <label for="category">Pick a Category</label>
+    <select id="category" name="category">
+        <option value="shoes">Shoes</option>
+        <optgroup label="Skirts">
+            <option>Mini</option>
+            <option>Midi</option>
+        </optgroup>
+    </select>
+</form>
+            </code></pre>
+            <p>
+                <a href="" target="_blank"></a>
+            </p>
+            <aside class="notes"></aside>
+        </section>
+
+        <section>
             <h2></h2>
             <pre><code class="hljs" data-trim contenteditable>
 
             </code></pre>
             <p>
-                <a href=""></a>
+                <a href="" target="_blank"></a>
             </p>
             <aside class="notes"></aside>
         </section>
 
 
+
+
         <!--Slide with list temp-->
         <section>
-            <h2></h2>
+            <h2>Reading</h2>
             <ul>
-                <li class="fragment"><a href="" target="_blank"></a></li>
-                <li class="fragment"></li>
+                <li class="fragment"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/How_to_structure_an_HTML_form" target="_blank">How to structure a form</a></li>
+                <li class="fragment"><a href="http://getbootstrap.com/css/#forms" target="_blank">Bootstrap Css for forms</a></li>
             </ul>
             <p>
-                <a href=""></a>
+                <a href="https://jsfiddle.net/yonet3d/bhcwkkst/1/" target="_blank"></a>
             </p>
             <aside class="notes"></aside>
         </section>
