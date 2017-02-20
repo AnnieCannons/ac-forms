@@ -44,11 +44,7 @@
 
         <!--Introduction slide-->
         <section>
-            <h1>Html Forms</h1>
-            <h3></h3>
-            <p>
-
-            </p>
+            <h2>Html Forms</h2>
         </section>
         <!--/Intro Slides-->
 
@@ -59,93 +55,60 @@
                 <li class="fragment">Email</li>
                 <li class="fragment">Shopping</li>
             </ul>
-            <p class="fragment">
-                <a href="https://jsfiddle.net/api/mdn/" target="_blank">Example</a>
-            </p>
-            <aside class="notes"></aside>
-        </section>
-
-        <section>
-            <h2>Form container</h2>
-            <pre><code class="hljs" data-trim contenteditable>
-<form action="/my-handling-form-page" method="post"></form>
-            </code></pre>
-            <ul>
-                <li class="fragment">The action attibute defines the location (an URL) where the form's collected data should be sent.</li>
-                <li class="fragment">The method attribute defines which HTTP method to send the data with (it can be "get" or "post").</li>
-            </ul>
-            <aside class="notes"></aside>
-        </section>
-
-
-        <section>
-            <h2></h2>
-            <pre><code class="hljs" data-trim contenteditable>
-<form action="/my-handling-form-page" method="post">
-    <label for="name">Name:</label>
-    <input type="text" id="name"/>
-</form>
-            </code></pre>
-            <p>
-                <a href="https://jsfiddle.net/bhcwkkst/" target="_blank">JsFiddle</a>
-            </p>
             <aside class="notes"></aside>
         </section>
 
         <section>
             <h2>Inputs</h2>
-            <pre><code class="hljs" data-trim contenteditable>
-<input type="text" value="My name is Ays"/>
-            </code></pre>
-            <p>
-                <a href="" target="_blank"></a>
-            </p>
+<pre><code class="hljs" data-trim contenteditable>
+<input type="text"/>
+</code></pre>
             <aside class="notes"></aside>
         </section>
 
         <section>
-            <pre><code class="hljs" data-trim contenteditable>
-<input type="text" value="My name is Ays" placeholder="Your name"/>
-            </code></pre>
-            <p>
-                <a href="" target="_blank"></a>
-            </p>
-            <aside class="notes">
-                Delete the value of the input to see the placeholder. Delete the value attribute.
-            </aside>
-        </section>
-        <section>
-            <h2></h2>
-            <pre><code class="hljs" data-trim contenteditable>
-<input type="text" id="date" name="expiration" required/>
-<strong><abbr title="required">*</abbr></strong>
-            </code></pre>
-            <p>
-                <a href="" target="_blank"></a>
-            </p>
-            <aside class="notes"></aside>
+            <h2>Inputs</h2>
+<pre><code class="hljs" data-trim contenteditable>
+<input type="text" placeholder="Your name"/>
+</code></pre>
         </section>
 
         <section>
-            <h2>Input types</h2>
+            <h2>Input Field Types</h2>
             <ul>
-                <li class="fragment"><a href="" target="_blank">Checkbox</a></li>
+                <li class="fragment">Checkbox</li>
                 <li class="fragment">Button</li>
                 <li class="fragment">Range</li>
                 <li class="fragment">Week</li>
                 <li class="fragment">Tel</li>
+                <li class="fragment">Color</li>
+                <li class="fragment">Date</li>
+                <li class="fragment">Textarea</li>
             </ul>
             <p class="fragment">
                 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" target="_blank">And more</a>
             </p>
-            <aside class="notes">
-                Try out these different types on jsfiddle
-            </aside>
+            <p>Try out these different types on jsfiddle/jsbin</p>
+        </section>
+
+        <section>
+            <h2>Input Attributes</h2>
+            <ul>
+                <li class="fragment">Type</li>
+                <li class="fragment">Autofocus</li>
+                <li class="fragment">Name</li>
+                <li class="fragment">Value</li>
+                <li class="fragment">Placeholder</li>
+                <li class="fragment">Required</li>
+                <li class="fragment">Pattern (ex: [A-Za-z]{3})</li>
+                <li class="fragment">Readonly</li>
+            </ul>
         </section>
 
         <section>
             <h2>Fieldset</h2>
-            <pre><code class="hljs" data-trim contenteditable>
+            <p>The fieldset element is a convenient way to create groups of widgets that share the same purpose.</p>
+<pre><code class="hljs" data-trim contenteditable>
 <fieldset>
  <legend>Fieldset label is a legend</legend>
     <p>
@@ -157,19 +120,13 @@
         <label for="size_2">Medium</label>
     </p>
 </fieldset>
-            </code></pre>
-            <p>
-                <a href="" target="_blank"></a>
-            </p>
-            <aside class="notes">
-                The fieldset element is a convenient way to create groups of widgets that share the same purpose.
-            </aside>
+</code></pre>
         </section>
 
 
         <section>
-            <h2></h2>
-            <pre><code class="hljs" data-trim contenteditable>
+            <h2>Dropdowns</h2>
+<pre><code class="hljs" data-trim contenteditable>
 <form>
     <label for="category">Pick a Category</label>
     <select id="category" name="category">
@@ -180,49 +137,52 @@
         </optgroup>
     </select>
 </form>
-            </code></pre>
+</code></pre>
+        </section>
+
+        <section>
+            <h2>How do we save the information?</h2>
+            <img src="https://internetingishard.com/html-and-css/forms/form-frontend-and-backend-2a0f80.png" alt="">
+        </section>
+
+        <section>
+            <h2>Form container</h2>
+<pre><code class="hljs" data-trim contenteditable>
+<form action="/my-handling-form-page" method="post"></form>
+</code></pre>
+            <ul>
+                <li class="fragment">The action attibute defines the location (an URL) where the form's collected data should be sent.</li>
+                <li class="fragment">The method attribute defines which HTTP method to send the data with (it can be "get" or "post").</li>
+            </ul>
+            <aside class="notes"></aside>
+        </section>
+
+
+        <section>
+            <h2>Exercise</h2>
+<pre><code class="hljs" data-trim contenteditable>
+<form action="/my-handling-form-page" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name"/>
+</form>
+</code></pre>
             <p>
-                <a href="" target="_blank"></a>
+                <a href="https://jsfiddle.net/bhcwkkst/" target="_blank">JsFiddle</a>
             </p>
             <aside class="notes"></aside>
         </section>
+
+        
         <section>
             <h3>Form Validation</h3>
-<!--             <pre><code data-trim contenteditable style="font-size: 20px; padding: 15px;">
-        
-            </pre></code> -->
-            <p><a href="" target="_blank"></a></p>
-            <aside class="notes">
-            Check out the example on the examples/form-validation.html
-            </aside>
+            <p>Check out the example on the examples/form-validation.html</p>
         </section>
+
         <section>
-            <h3>Exercise</h3>
-            <ul>
-                <li>Add a form.</li>
-                <li>Add a onsubmit function to your form.</li>
-                <li>On the onsubmit function get the data from the input fields and check if they are valid.</li>
-                <li>Check if the email is a correct email format.</li>
-            </ul>
-            <aside class="notes">
-            Checking email clue: somevalue.indexOf('@'), somevalue.indexOf('.com')
-            </aside>
+            <p><a href="https://firebase.google.com">Firebase</a></p>
+            <p><a href="https://www.netlify.com/docs/form-handling/">Netlify</a>
         </section>
 
-
-        <!--<section>-->
-            <!--<h2></h2>-->
-            <!--<pre><code class="hljs" data-trim contenteditable>-->
-
-            <!--</code></pre>-->
-            <!--<p>-->
-                <!--<a href="" target="_blank"></a>-->
-            <!--</p>-->
-            <!--<aside class="notes"></aside>-->
-        <!--</section>-->
-
-
-        <!--Slide with list temp-->
         <section>
             <h2>Reading</h2>
             <ul>
@@ -232,27 +192,12 @@
             <p>
                 <a href="https://jsfiddle.net/yonet3d/bhcwkkst/1/" target="_blank"></a>
             </p>
-            <aside class="notes"></aside>
         </section>
 
-        <!--<section>-->
-            <!--<h2>Clever Quotes</h2>-->
-            <!--<p>-->
-                <!--These guys come in two forms, inline: <q-->
-                    <!--cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">-->
-                <!--&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:-->
-            <!--</p>-->
-            <!--<blockquote-->
-                    <!--cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">-->
-                <!--&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of-->
-                <!--typewriters would-->
-                <!--reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;-->
-            <!--</blockquote>-->
-        <!--</section>-->
-
-
-        <!--You can link between slides internally,-->
-        <!--<a href="#/2/3">like this</a>.-->
+        <section>
+            <h2>Pluralsight Courses</h2>
+            <a href="https://app.pluralsight.com/library/courses/designing-modern-forms-web-2163/table-of-contents">Designing Web Forms</a>
+        </section>
 
 
         <section style="text-align: left;">
